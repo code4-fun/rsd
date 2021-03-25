@@ -25,7 +25,7 @@ public class Main {
             results.addAll(rootObject.getResults());
         }
 
-        Writer writer = new FileWriter("C:\\yourfile.csv");
+        Writer writer = new FileWriter("yourfile.csv");
         StatefulBeanToCsv beanToCsv = new StatefulBeanToCsvBuilder(writer).build();
         beanToCsv.write(results);
         writer.close();
